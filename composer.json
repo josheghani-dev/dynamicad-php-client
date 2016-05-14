@@ -1,0 +1,19 @@
+{
+    "name": "anetwork/dynamicad-php-client",
+    "description": "Anetwork dynamicad php client",
+    "authors": [
+        {
+            "name": "Mehdi Hosseini",
+            "email": "m.hosseini@anetwork.ir"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+          "Anetwork\\Dynamicad\\": "src/"
+        }
+    }
+}
