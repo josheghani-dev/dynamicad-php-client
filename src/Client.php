@@ -16,7 +16,7 @@ class Client {
 
     if ( $type == 'logo' ) {
 
-      $this->url = $this->config[ 'api-url' ] . 'logo.php?token=' . $this->config[ 'token' ];
+      $this->url = $this->config[ 'api-url' ] . 'logo?token=' . $this->config[ 'token' ];
 
     } else {
 
