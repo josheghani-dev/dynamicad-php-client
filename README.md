@@ -1,4 +1,11 @@
+[![Build Status](https://travis-ci.org/anetwork/dynamicad-php-client.svg?branch=v0.1.1)](https://travis-ci.org/anetwork/dynamicad-php-client)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/anetwork/dynamicad-php-client/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/anetwork/dynamicad-php-client/?branch=master)
+
 Hey, this is Anetwork Dynamicad PHP client, if you want to test our REST API or want to use it as fast as possible this package is for you, with this package you can simply fetch your products, update them, delete them and finally manage your products logo. here is how we do it.
+
+# Support
+* PHP: ^5.5 - 7.0
+* HHVM
 
 # Installation
 Add the package to your composer
