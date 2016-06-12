@@ -45,11 +45,7 @@ $data = [
      'id' => 'abc',
      'title' => 'this is title',
      'url' => 'http://google.com',
-     'image' => 'http://i.telegraph.co.uk/multimedia/archive/03589/Wellcome_Image_Awa_3589699k.jpg',
-     'visibility' => '1',
-     'logo' => '451',
-     'price' => '20000',
-     'discount' => '180000'
+     'image' => 'http://i.telegraph.co.uk/multimedia/archive/03589/Wellcome_Image_Awa_3589699k.jpg'
    ];
 
 Client::product()->post( $data );
