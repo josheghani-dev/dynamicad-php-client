@@ -1,9 +1,3 @@
----------------------- Under Development!!!! -------------------
-
-This package development is not finished yet.
-
-----------------------------------------------------------------
-
 Hey, this is Anetwork Dynamicad PHP client, if you want to test our REST API or want to use it as fast as possible this package is for you, with this package you can simply fetch your products, update them, delete them and finally manage your products logo. here is how we do it.
 
 # Installation
@@ -40,7 +34,7 @@ Client::products()->get();
 Client::products()->id(1)->get();
 
 // return product which limited to 10 and offset 2
-Client::products()->limit(10)->offset(2)->get();
+Client::products()->limit(10, 2)->get();
 ```
 
 # Insert
@@ -52,7 +46,7 @@ $data = [
      'title' => 'this is title',
      'url' => 'http://google.com',
      'image' => 'http://i.telegraph.co.uk/multimedia/archive/03589/Wellcome_Image_Awa_3589699k.jpg',
-     'visiblity' => '1',
+     'visibility' => '1',
      'logo' => '451',
      'price' => '20000',
      'discount' => '180000'
@@ -60,6 +54,12 @@ $data = [
 
 Client::product()->post( $data );
 ```
+
+## troubleshooting
+
+| Error | Descriptions | Solution |
+| --- | --- | --- |
+| 017 | Logo does not exist! | You should add new logo yo DynamicAd which explained in [this](https://github.com/anetwork/dynamicad-php-client#insert-1) part.
 
 # Update
 You can also update your products with ```id```, ```title```, ```image``` and ```url``` as required fields:
@@ -97,7 +97,7 @@ Client::logo()->get();
 Client::logo()->id(1)->get();
 
 // return logos which limited to 10 and offset 2
-Client::logo()->limit(10)->offset(2)->get();
+Client::logo()->limit(10,2)->get();
 ```
 
 # Insert

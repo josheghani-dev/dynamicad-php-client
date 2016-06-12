@@ -1,10 +1,13 @@
 <?php
 
-require_once( 'vendor/autoload.php' );
+require_once 'vendor/autoload.php';
 
 use Anetwork\Dynamicad\Client;
 
-var_dump( Client::product()->get() );
+var_dump(Client::logo()->delete(10015));
+exit;
+var_dump(Client::product()->id('abc')->get());
+exit;
 
 // $data = [
 //     'id' => 'abc',

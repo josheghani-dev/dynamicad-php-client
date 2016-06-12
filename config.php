@@ -6,5 +6,4 @@ return [
 
   'token' => 'YOUR_GENERATED_TOKEN'
 
-
 ];
