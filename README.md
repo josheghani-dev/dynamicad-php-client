@@ -20,6 +20,13 @@ Use this namespace and start working:
 use Anetwork\Dynamicad\Client;
 ```
 
+## Set Config
+You should set your API token before using the API Client:
+
+```
+Client::config( [ 'token' => 'YOUR-GENERATED-TOKEN' ] );
+```
+
 # Manage products
 You can manage your products in this part, you can insert, update, delete or get the products list in here.
 
@@ -28,13 +35,13 @@ This method returns your products list and let you limit the results.
 
 ```
 // return all products, limit them to 1000 items per request
-Client::products()->get();
+Client::product()->get();
 
 // return product with id equals to 1
-Client::products()->id(1)->get();
+Client::product()->id(1)->get();
 
 // return product which limited to 10 and offset 2
-Client::products()->limit(10, 2)->get();
+Client::product()->limit(10, 2)->get();
 ```
 
 # Insert

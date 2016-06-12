@@ -18,6 +18,8 @@ class Client
 
     private $url;
 
+    private static $token;
+
     public function __construct($type)
     {
 
@@ -25,10 +27,10 @@ class Client
 
         if ($type == 'logo') {
             $this->url = $this->config[ 'api-url' ] . 'logo?token=' .
-              $this->config[ 'token' ];
+              self::$token;
         } else {
             $this->url = $this->config[ 'api-url' ] . '?token=' .
-              $this->config[ 'token' ];
+              self::$token;
         }
 
     }
@@ -48,6 +50,21 @@ class Client
                 $e->getLine();
         }
 
+
+    }
+
+    /**
+    * Initializing DynamicAd
+    *
+    * @param array $config initilizing params.
+    * @return void
+    */
+    public static function config($config)
+    {
+
+        if (isset($config['token'])) {
+            self::$token = $config['token'];
+        }
 
     }
 
