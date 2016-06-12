@@ -23,7 +23,7 @@ class Client
     public function __construct($type)
     {
 
-        $this->config = include './config.php';
+        $this->config = include 'config.php';
 
         if ($type == 'logo') {
             $this->url = $this->config[ 'api-url' ] . 'logo?token=' .
