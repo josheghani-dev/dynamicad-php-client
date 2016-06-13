@@ -123,7 +123,7 @@ Client::logo()->post( $data );
 ```
 
 # Update
-You can also update your products with ```id``` as required field:
+You can also update your products logo with ```id``` as required field:
 
 ```
 $data = [
@@ -136,7 +136,7 @@ Client::logo()->update( $data );
 ```
 
 # Delete
-And you can simply delete your product with product ```id```:
+And you can simply delete your product logo with product ```id```:
 
 ```
 Client::logo()->delete( 1 );
