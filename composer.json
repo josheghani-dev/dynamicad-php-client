@@ -1,6 +1,7 @@
 {
     "name": "anetwork/dynamicad-php-client",
     "description": "Anetwork dynamicad php client",
+    "license": "MIT",
     "authors": [
         {
             "name": "Mehdi Hosseini",
